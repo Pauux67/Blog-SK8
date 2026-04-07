@@ -1,0 +1,49 @@
+
+ /*
+ ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
+██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
+╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
+ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+                                                   */
+
+/* --- GUNMETAL (#414142) --- */
+.bg-gunmetal {
+    background-color: #414142;
+}
+.color-gunmetal {
+    color: #414142;
+}
+
+/* --- WHEAT (#EDD5A6) --- */
+.bg-wheat {
+    background-color: #EDD5A6;
+}
+.color-wheat {
+    color: #EDD5A6;
+}
+
+/* --- PORCELAIN (#FAFBF8) --- */
+.bg-porcelain {
+    background-color: #FAFBF8;
+}
+.color-porcelain {
+    color: #FAFBF8;
+}
+
+/* --- BLACK (#000000) --- */
+.bg-black {
+    background-color: #000000;
+}
+.color-black {
+    color: #000000;
+}
+
+/* --- WHITE (#FFFFFF) --- */
+.bg-white {
+    background-color: #FFFFFF;
+}
+.color-white {
+    color: #FFFFFF;
+}
