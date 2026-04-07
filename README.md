@@ -34,19 +34,19 @@
                      (_).____.'
 
 🛹 Descripció del blog
-Aquest blog és una recopilació dels principals trucs d'Skate <br>
-i les persones més representatives d'aquest esport. <br>
-Les principals funcionalitats són veure els principals trucs <br>
-(ja sigui en vídeo o imatge), recopilar els millors skateparks <br>
-(spots) de la zona, compartir la nostra passió per muntar taules <br>
-amb apartats dedicats a recomanacions de components i builds complets, <br>
+Aquest blog és una recopilació dels principals trucs d'Skate 
+i les persones més representatives d'aquest esport. 
+Les principals funcionalitats són veure els principals trucs 
+(ja sigui en vídeo o imatge), recopilar els millors skateparks 
+(spots) de la zona, compartir la nostra passió per muntar taules 
+amb apartats dedicats a recomanacions de components i builds complets, 
 i oferir un espai per a la comunitat.
 
-Estem fent aquest projecte per unir les nostres dues passions: <br>
-picar codi i patinar. Serveix com a projecte de pràctica <br>
-per millorar les nostres habilitats de desenvolupament web <br>
-mentre creem una eina útil per a qualsevol rider que vulgui <br>
-aprendre, descobrir més sobre la cultura de l'skateboarding <br>
+Estem fent aquest projecte per unir les nostres dues passions: 
+picar codi i patinar. Serveix com a projecte de pràctica 
+per millorar les nostres habilitats de desenvolupament web 
+mentre creem una eina útil per a qualsevol rider que vulgui 
+aprendre, descobrir més sobre la cultura de l'skateboarding 
 i configurar el seu setup ideal.
 
 📸 Captures, demo o fragments de codi del projecte
