@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accés - Blog d'Skate</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="login-form" class="form active">
+                <h2>Inicia Sessió</h2>
+                <p class="subtitle">Torna a la rampa. Benvingut de nou.</p>
+                
+                <div class="input-group">
+                    <label for="login-email">Correu electrònic</label>
+                    <input type="email" id="login-email" placeholder="skater@exemple.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="login-password">Contrasenya</label>
+                    <input type="password" id="login-password" placeholder="********" required>
+                </div>
+                
+                <button type="submit" class="btn">Entrar</button>
+                
+                <p class="switch-form">No tens compte? <a href="#" onclick="toggleForm(); return false;">Registra't aquí</a></p>
+            </form>
+
+            <form id="register-form" class="form">
+                <h2>Uneix-te</h2>
+                <p class="subtitle">Crea el teu compte i comparteix els teus trucs.</p>
+                
+                <div class="input-group">
+                    <label for="reg-name">Nom d'usuari</label>
+                    <input type="text" id="reg-name" placeholder="El teu nom o àlies" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-email">Correu electrònic</label>
+                    <input type="email" id="reg-email" placeholder="skater@exemple.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="reg-password">Contrasenya</label>
+                    <input type="password" id="reg-password" placeholder="********" required>
+                </div>
+                
+                <button type="submit" class="btn">Registrar-se</button>
+                
+                <p class="switch-form">Ja tens compte? <a href="#" onclick="toggleForm(); return false;">Inicia sessió</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            document.getElementById('login-form').classList.toggle('active');
+            document.getElementById('register-form').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
