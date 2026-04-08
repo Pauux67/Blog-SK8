@@ -1,160 +1,116 @@
-/* Definim els colors de la teva paleta com a variables globals per facilitar-ne l'ús */
-:root {
-    --color-gunmetal: #414142;
-    --color-wheat: #EDD5A6;
-    --color-porcelain: #FAFBF8;
-}
-
+/* Reseteig bàsic per treure marges per defecte */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fons de la pàgina amb el blanc trencat */
 body {
-    background-color: var(--color-porcelain);
-    color: var(--color-gunmetal);
+    background-color: #FAFBF8; 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* Patró subtil de punts de fons per donar textura urbana */
-    background-image: radial-gradient(#d3d4d0 1px, transparent 1px);
-    background-size: 20px 20px;
 }
 
-.container {
-    width: 100%;
-    max-width: 420px;
+/* Contenidor que agrupa els formularis */
+.contenidor {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
 }
 
-.form-wrapper {
-    background-color: var(--color-gunmetal);
-    color: var(--color-porcelain);
-    padding: 40px;
-    border-radius: 8px;
-    /* Vores lleugerament arrodonides per un toc modern */
-    box-shadow: 0 15px 30px rgba(65, 65, 66, 0.4);
-    position: relative;
-    overflow: hidden;
+/* Estil de les caixes amb el gunmetal (gris fosc) - ENCARA MÉS AMPLES */
+.caixa-formulari {
+    background-color: #414142; 
+    padding: 50px 40px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+    width: 100%;
+    max-width: 600px; /* Hem ampliat la caixa a 600px perquè sigui ben ampla */
 }
 
-.form {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Mostrem només el formulari actiu amb una petita animació */
-.form.active {
-    display: flex;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Títols */
 h2 {
-    font-size: 28px;
-    color: var(--color-wheat);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #FAFBF8; 
+    font-size: 28px; 
 }
 
-.subtitle {
-    font-size: 14px;
-    color: #b0b0b0;
-    margin-bottom: 10px;
+/* Grups de text + input */
+.grup-input {
+    margin-bottom: 20px; 
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.grup-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #FAFBF8; 
+    font-weight: 600;
 }
 
-.input-group label {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--color-wheat);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.input-group input {
-    padding: 14px 15px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    background-color: rgba(250, 251, 248, 0.1);
-    /* Fons de l'input lleugerament transparent */
-    color: var(--color-porcelain);
+/* Camps per escriure */
+.grup-input input {
+    width: 100%;
+    padding: 14px; 
+    border: 2px solid #5a5a5b; 
+    border-radius: 5px;
     font-size: 16px;
-    transition: all 0.3s ease;
+    background-color: #FAFBF8; 
+    color: #414142; 
+    transition: border-color 0.3s;
+}
+
+/* Efecte beix quan fas clic dins un input */
+.grup-input input:focus {
+    border-color: #EDD5A6; 
     outline: none;
 }
 
-.input-group input:focus {
-    border-color: var(--color-wheat);
-    background-color: rgba(250, 251, 248, 0.15);
-}
-
-.input-group input::placeholder {
-    color: #888;
-}
-
-.btn {
-    background-color: var(--color-wheat);
-    color: var(--color-gunmetal);
-    padding: 15px;
+/* Botó principal beix */
+.boto {
+    width: 100%;
+    padding: 14px; 
+    background-color: #EDD5A6; 
+    color: #414142; 
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 700;
+    border-radius: 5px;
+    font-size: 18px; 
+    font-weight: bold;
     cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background-color: #dfc594;
-    /* Un beix una mica més fosc al passar el ratolí */
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(237, 213, 166, 0.3);
-}
-
-.btn:active {
-    transform: translateY(0);
-}
-
-.switch-form {
-    text-align: center;
-    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s;
     margin-top: 15px;
-    color: #b0b0b0;
 }
 
-.switch-form a {
-    color: var(--color-wheat);
+/* Quan passes el ratolí per sobre del botó */
+.boto:hover {
+    background-color: #dcb97d; 
+}
+
+/* Textos de sota el botó */
+.text-canvi {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #FAFBF8; 
+}
+
+/* Enllaços de sota */
+.text-canvi a {
+    color: #FAFBF8;
     text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
+    font-weight: bold;
+    border-bottom: 2px solid #EDD5A6; 
+    transition: color 0.3s, border-bottom-color 0.3s;
 }
 
-.switch-form a:hover {
-    text-decoration: underline;
-    color: var(--color-porcelain);
+.text-canvi a:hover {
+    color: #EDD5A6; 
+    border-bottom-color: #FAFBF8;
 }
