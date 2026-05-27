@@ -8,9 +8,9 @@
 .body {
     height: 100vh;
 
-    overflow: hidden;
-
     background-color: #FAFBF8;
+
+    overflow-x: hidden;
 
     display: grid;
     grid-template: 
