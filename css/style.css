@@ -104,3 +104,21 @@
 
     color:#FAFBF8;
 }
+
+@media (min-width: 360px) {
+
+    .header {
+        flex-direction: column-reverse;
+
+        padding-top: 1em;
+    }
+
+    .loginDiv {
+        text-align: start;
+        padding-left: 1em;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+}
