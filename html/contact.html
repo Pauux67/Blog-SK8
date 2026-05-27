@@ -4,36 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - SK8 | Contacte</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/login.css">
 </head>
-<body>
-    <div class="contenidor">
-        <div class="caixa-formulari">
-            <h2>Contacte</h2>
-            
-            <form action="#" method="POST">
-                <div class="grup-input">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+<body class="body">
+    <header class="header">
+        <img src="./../img/BannerSK8.png" alt="logo" class="logo">
+        <div class="loginDiv"><a href="./html/login.html">Iniciar Sessió</a></div>
+    </header>
 
-                <div class="grup-input">
-                    <label for="email">Correu electrònic:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+    <nav class="nav">
+        <a href="../index.html">Inici</a>
+        <a href="../html/about.html">Sobre nosaltres</a>
+        <a href="../html/posts.html">Trucs de skate</a>
+        <a href="../html/store.html">La nostra botiga</a>
+        <a href="../html/contact.html">Contactan's</a>
+    </nav>
 
-                <div class="grup-input">
-                    <label for="message">Missatge:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
+    <main class="main">
+        <div class="contenidor">
+            <div class="caixa-formulari">
+                <h2>Contacte</h2>
+                
+                <form action="#" method="POST">
+                    <div class="grup-input">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <button type="submit" class="boto">Enviar Missatge</button>
-            </form>
-            
-            <div class="text-canvi">
-                <p><a href="/">Tornar a l'inici</a></p>
+                    <div class="grup-input">
+                        <label for="email">Correu electrònic:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="message">Missatge:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boto">Enviar Missatge</button>
+                </form>
+                
+                <div class="text-canvi">
+                    <p><a href="/">Tornar a l'inici</a></p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <marquee behavior="scroll" direction="left">
+        <div class="marqueeDiv">
+            <img src="../img/sk8icon.png" alt="icon">
+            <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+        </div>
+        </marquee>
+    </footer>
 </body>
 </html>

@@ -93,6 +93,16 @@
 .footer {
     grid-area: footer;
     background-color: #414142;
+    text-decoration: none;
+}
+
+.footer h2 {
+    color: #EDD5A6;
+}
+
+
+.footer h2:hover {
+    color: white;
 }
 
 .marqueeDiv {
