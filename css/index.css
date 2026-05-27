@@ -1,0 +1,46 @@
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.product-item img {
+    height: 12em;
+    width: 10em;
+
+
+}
+
+.trick-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+
+
+}
+
+.hero-content img {
+    height: 12em;
+    width: 17em;
+
+
+}
+
+.main {
+    padding: 1em;
+}
