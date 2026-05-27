@@ -1,19 +1,106 @@
 *{
     margin: 0;
     padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-    background-color: #414142;  /* gunmetal color */
-    height: 20vh;
+.body {
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: #FAFBF8;
+
+    display: grid;
+    grid-template: 
+    "header"    2fr
+    "nav"       0.5fr
+    "main"      6fr
+    "footer"    1fr
+    / 100%;
 }
 
-#bannercontainer {
-    height: 20vh;
-    width: 25vw;
-    background-color: blue;
+.header {
+    grid-area: header;
+    background-color: #414142;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-#banner {
-    width: 90%;
+.loginDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.loginDiv a {
+    text-decoration: none;
+    color: #EDD5A6;
+}
+
+.loginDiv a:hover {
+    color: #FAFBF8;
+
+    transition-duration: 0.4s;
+}
+
+.logo {
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    grid-area: nav;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    flex: 1;
+    background-color: #414142;
+    color: #EDD5A6;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    box-sizing: border-box;
+
+    transition-duration: 0.4s;
+}
+
+.nav a:hover {
+    color: #414142;
+    background-color: #EDD5A6;
+
+    transform: scale(1.2);
+
+    transition-duration: 0.4s;
+}
+
+
+.main {
+    grid-area: main;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #414142;
+}
+
+.marqueeDiv {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    color:#FAFBF8;
 }
