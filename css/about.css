@@ -1,7 +1,10 @@
 /* Centrem el text de dalt */
 .about-section {
+    width: 50%;
     text-align: center;
     padding: 2rem;
+
+    background-color: #41414246;
 }
 
 .about-intro {
@@ -47,4 +50,15 @@
 .profile-info p {
     text-align: center;
     margin: 0;
+}
+
+.main{
+    background-image: url("/img/Background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
