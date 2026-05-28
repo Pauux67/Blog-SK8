@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sessió</title>
+    <title i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</title>
     <link rel="icon" type="image/x-icon" href="./img/logoSK8nopaper.png">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="../js/script.js"></script>
 </head>
 <body class="body">
+    <div class="lang-container" style="text-align: right; padding: 15px;">
+        <select id="langSelect">
+          <option value="ca">Català</option>
+          <option value="es">Castellano</option>
+          <option value="en">English</option>
+        </select>
+    </div>
+
     <div class="contenidor">
         <div class="caixa-formulari">
-            <h2>Iniciar Sessió</h2>
+            <h2 i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</h2>
             <form action="#">
                 <div class="grup-input">
-                    <label for="login-email">Correu electrònic</label>
+                    <label for="login-email" i18n data-ca="Correu electrònic" data-es="Correo electrónico" data-en="Email">Correu electrònic</label>
                     <input type="email" id="login-email" placeholder="El teu correu" required>
                 </div>
                 <div class="grup-input">
-                    <label for="login-password">Contrasenya</label>
+                    <label for="login-password" i18n data-ca="Contrasenya" data-es="Contraseña" data-en="Password">Contrasenya</label>
                     <input type="password" id="login-password" placeholder="La teva contrasenya" required>
                 </div>
-                <button type="submit" class="boto">Entrar</button>
-                <p class="text-canvi">No tens compte? <a href="register.html">Registra't</a></p>
+                <button type="submit" class="boto" i18n data-ca="Entrar" data-es="Entrar" data-en="Log in">Entrar</button>
+                <p class="text-canvi">
+                    <span i18n data-ca="No tens compte? " data-es="¿No tienes cuenta? " data-en="Don't have an account? ">No tens compte? </span> 
+                    <a href="register.html" i18n data-ca="Registra't" data-es="Regístrate" data-en="Sign up">Registra't</a>
+                </p>
             </form>
         </div>
     </div>
     
     <footer class="footer">
-        <a href="./../index.html"><h2>Tornar a l'inici</h2></a>
+        <a href="./../index.html"><h2 i18n data-ca="Tornar a l'inici" data-es="Volver al inicio" data-en="Return to home">Tornar a l'inici</h2></a>
         <marquee behavior="scroll" direction="left">
             <div class="marqueeDiv">
             <img src="./../img/sk8icon.png" alt="icon"> 
-            <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+            <p i18n data-ca="Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions" data-es="Sk8. De sk8ers, para sk8ers. ©2026 Pau & Marc productions" data-en="Sk8. By sk8ers, for sk8ers. ©2026 Pau & Marc productions">Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
             </div>
         </marquee>
     </footer>

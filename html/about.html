@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SK8.com - Sobre nosaltres</title>
+        <title i18n data-ca="SK8.com - Sobre nosaltres" data-es="SK8.com - Sobre nosotros" data-en="SK8.com - About us">SK8.com - Sobre nosaltres</title>
         <meta name="author" content="Marc & Pau">
         <meta name="description" content="Skate">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,32 +12,45 @@
         <link rel="stylesheet" type="text/css" href="./../css/style.css">
         <link rel="stylesheet" type="text/css" href="./../css/about.css">
         <link rel="stylesheet" type="text/css" href="./../css/colors.css">
+        
+        <script src="./../js/script.js"></script>
     </head>
     <body class="body">
       <header class="header">
         <img src="./../img/BannerSK8.png" alt="logo" class="logo">
-        <div class="loginDiv"><a href="../html/login.html">Iniciar Sessió</a></div>
+        
+        <div class="lang-container" style="margin-left: auto; margin-right: 15px;">
+            <select id="langSelect">
+              <option value="ca">Català</option>
+              <option value="es">Castellano</option>
+              <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="loginDiv">
+            <a href="../html/login.html" i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</a>
+        </div>
       </header> 
 
       <nav class="nav">
-        <a href="../index.html">Inici</a>
-        <a href="./../html/about.html">Sobre nosaltres</a>
-        <a href="./../html/posts.html">Trucs de skate</a>
-        <a href="./../html/store.html">La nostra botiga</a>
-        <a href="./../html/contact.html">Contactan's</a>
+        <a href="../index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a>
+        <a href="./../html/about.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a>
+        <a href="./../html/posts.html" i18n data-ca="Trucs de skate" data-es="Trucos de skate" data-en="Skate tricks">Trucs de skate</a>
+        <a href="./../html/store.html" i18n data-ca="La nostra botiga" data-es="Nuestra tienda" data-en="Our store">La nostra botiga</a>
+        <a href="./../html/contact.html" i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</a>
       </nav>
 
       <main class="main">
         <section class="about-section">
-            <h1 class="about-title">Qui som?</h1>
-            <p class="about-intro">Benvinguts a SK8. Som el Marc i el Pau, dos apassionats de l'skate que hem creat aquesta pàgina per compartir la nostra passió, trucs i material amb tota la comunitat skater.</p>
+            <h1 class="about-title" i18n data-ca="Qui som?" data-es="¿Quiénes somos?" data-en="Who are we?">Qui som?</h1>
+            <p class="about-intro" i18n data-ca="Benvinguts a SK8. Som el Marc i el Pau, dos apassionats de l'skate que hem creat aquesta pàgina per compartir la nostra passió, trucs i material amb tota la comunitat skater." data-es="Bienvenidos a SK8. Somos Marc y Pau, dos apasionados del skate que hemos creado esta página para compartir nuestra pasión, trucos y material con toda la comunidad skater." data-en="Welcome to SK8. We are Marc and Pau, two skate enthusiasts who have created this page to share our passion, tricks, and gear with the whole skater community.">Benvinguts a SK8. Som el Marc i el Pau, dos apassionats de l'skate que hem creat aquesta pàgina per compartir la nostra passió, trucs i material amb tota la comunitat skater.</p>
             
             <div class="team-container">
                 <article class="profile">
                     <img src="/img/Marcpfp.jpg" alt="Foto d'en Marc" class="profile-img">
                     <div class="profile-info">
                         <h2>Marc</h2>
-                        <p>Sóc el Marc, un fanàtic de l'skate des que tinc ús de raó. Sempre em trobaràs al skatepark intentant planxar nous trucs i gaudint de l'adrenalina sobre la fusta. La meva especialitat són les rampes i el bowl. Skate or die!</p>
+                        <p i18n data-ca="Sóc el Marc, un fanàtic de l'skate des que tinc ús de raó. Sempre em trobaràs al skatepark intentant planxar nous trucs i gaudint de l'adrenalina sobre la fusta. La meva especialitat són les rampes i el bowl. Skate or die!" data-es="Soy Marc, un fanático del skate desde que tengo uso de razón. Siempre me encontrarás en el skatepark intentando planchar nuevos trucos y disfrutando de la adrenalina sobre la madera. Mi especialidad son las rampas y el bowl. ¡Skate or die!" data-en="I'm Marc, a skate fanatic for as long as I can remember. You'll always find me at the skatepark trying to land new tricks and enjoying the adrenaline on the wood. My specialty is ramps and the bowl. Skate or die!">Sóc el Marc, un fanàtic de l'skate des que tinc ús de raó. Sempre em trobaràs al skatepark intentant planxar nous trucs i gaudint de l'adrenalina sobre la fusta. La meva especialitat són les rampes i el bowl. Skate or die!</p>
                     </div>
                 </article>
                 
@@ -45,7 +58,7 @@
                     <img src="/img/pfppau.png" alt="Foto d'en Pau" class="profile-img">
                     <div class="profile-info">
                         <h2>Pau</h2>
-                        <p>Hola, sóc el Pau! L'skate de carrer és el meu rotllo. M'encanta buscar nous espots per la ciutat, saltar escales i gravar línies amb els col·legues. Amb el Marc hem creat aquesta web de sk8ers per a sk8ers. Ens veiem als carrers!</p>
+                        <p i18n data-ca="Hola, sóc el Pau! L'skate de carrer és el meu rotllo. M'encanta buscar nous espots per la ciutat, saltar escales i gravar línies amb els col·legues. Amb el Marc hem creat aquesta web de sk8ers per a sk8ers. Ens veiem als carrers!" data-es="¡Hola, soy Pau! El skate de calle es lo mío. Me encanta buscar nuevos spots por la ciudad, saltar escaleras y grabar líneas con los colegas. Con Marc hemos creado esta web de sk8ers para sk8ers. ¡Nos vemos en las calles!" data-en="Hi, I'm Pau! Street skating is my thing. I love looking for new spots around the city, jumping stairs, and filming lines with my friends. Marc and I created this site by sk8ers for sk8ers. See you in the streets!">Hola, sóc el Pau! L'skate de carrer és el meu rotllo. M'encanta buscar nous espots per la ciutat, saltar escales i gravar línies amb els col·legues. Amb el Marc hem creat aquesta web de sk8ers per a sk8ers. Ens veiem als carrers!</p>
                     </div>
                 </article>
             </div>
@@ -56,7 +69,7 @@
         <marquee behavior="scroll" direction="left">
           <div class="marqueeDiv">
             <img src="./../img/sk8icon.png" alt="icon"> 
-            <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+            <p i18n data-ca="Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions" data-es="Sk8. De sk8ers, para sk8ers. ©2026 Pau & Marc productions" data-en="Sk8. By sk8ers, for sk8ers. ©2026 Pau & Marc productions">Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
           </div>
         </marquee>
       </footer>

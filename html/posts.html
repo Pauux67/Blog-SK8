@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SK8.com</title>
+        <title>SK8.com - Trucs de Skate</title>
         <meta name="author" content="Marc & Pau">
         <meta name="description" content="Skate">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,31 +12,44 @@
         <link rel="stylesheet" type="text/css" href="./../css/style.css">
         <link rel="stylesheet" type="text/css" href="./../css/posts.css">
         <link rel="stylesheet" type="text/css" href="./../css/colors.css">
+
+        <script src="./../js/script.js"></script>
     </head>
     <body class="body">
       <header class="header">
         <img src="./../img/BannerSK8.png" alt="logo" class="logo">
-        <div class="loginDiv"><a href="../html/login.html">Iniciar Sessió</a></div>
+        
+        <div class="lang-container" style="margin-left: auto; margin-right: 15px;">
+            <select id="langSelect">
+              <option value="ca">Català</option>
+              <option value="es">Castellano</option>
+              <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="loginDiv">
+            <a href="../html/login.html" i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</a>
+        </div>
       </header> 
 
       <nav class="nav">
-        <a href="../index.html">Inici</a>
-        <a href="./../html/about.html">Sobre nosaltres</a>
-        <a href="./../html/posts.html">Trucs de skate</a>
-        <a href="./../html/store.html">La nostra botiga</a>
-        <a href="./../html/contact.html">Contactan's</a>
+        <a href="../index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a>
+        <a href="./../html/about.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a>
+        <a href="./../html/posts.html" i18n data-ca="Trucs de skate" data-es="Trucos de skate" data-en="Skate tricks">Trucs de skate</a>
+        <a href="./../html/store.html" i18n data-ca="La nostra botiga" data-es="Nuestra tienda" data-en="Our store">La nostra botiga</a>
+        <a href="./../html/contact.html" i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</a>
       </nav>
 
       <main class="main">
-        <h2>Trucs bàsics</h2>
+        <h2 i18n data-ca="Trucs bàsics" data-es="Trucos básicos" data-en="Basic tricks">Trucs bàsics</h2>
         <div class="section">
           <div class="section-container">
               <div class="img-div">
                   <img src="../img/tricks/tic-tac.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Tic-tac</h3>
-                <p>Aquest truc consisteix en fer petits kickturns endevant i endarrere.</p>
+                <h3 i18n data-ca="Tic-tac" data-es="Tic-tac" data-en="Tic-tac">Tic-tac</h3>
+                <p i18n data-ca="Aquest truc consisteix en fer petits kickturns endavant i endarrere." data-es="Este truco consiste en hacer pequeños kickturns hacia adelante y hacia atrás." data-en="This trick consists of doing small kickturns back and forth.">Aquest truc consisteix en fer petits kickturns endavant i endarrere.</p>
               </div>
           </div>
           <div class="section-container">
@@ -44,8 +57,8 @@
                   <img src="../img/tricks/skateboard-manual.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Manual</h3>
-                <p>Per fer un manual, cal recolzar el pes en el peu del darrere de manera que el nose de la taula es mantingui a l'aire mentres avancem.</p>
+                <h3 i18n data-ca="Manual" data-es="Manual" data-en="Manual">Manual</h3>
+                <p i18n data-ca="Per fer un manual, cal recolzar el pes en el peu del darrere de manera que el nose de la taula es mantingui a l'aire mentre avancem." data-es="Para hacer un manual, hay que apoyar el peso en el pie trasero de manera que el nose de la tabla se mantenga en el aire mientras avanzamos." data-en="To do a manual, you need to shift your weight to your back foot so that the nose of the board stays in the air while moving forward.">Per fer un manual, cal recolzar el pes en el peu del darrere de manera que el nose de la taula es mantingui a l'aire mentre avancem.</p>
               </div>
           </div>
           <div class="section-container">
@@ -53,8 +66,8 @@
                   <img src="../img/tricks/fakie-kickturn.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Fakie/Switch</h3>
-                <p>Aquest terme fa referència a rodar cap enrere, amb el peu no dominant devant.</p>
+                <h3 i18n data-ca="Fakie/Switch" data-es="Fakie/Switch" data-en="Fakie/Switch">Fakie/Switch</h3>
+                <p i18n data-ca="Aquest terme fa referència a rodar cap enrere, amb el peu no dominant davant." data-es="Este término hace referencia a rodar hacia atrás, con el pie no dominante delante." data-en="This term refers to riding backward, with your non-dominant foot forward.">Aquest terme fa referència a rodar cap enrere, amb el peu no dominant davant.</p>
               </div>
           </div>
           <div class="section-container">
@@ -62,8 +75,8 @@
                   <img src="../img/tricks/fakie-kickturn.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Fakie kickturn</h3>
-                <p>Mentres rodes fent un fakie, fas un kickturn per tornar a posisionar-te normal.</p>
+                <h3 i18n data-ca="Fakie kickturn" data-es="Fakie kickturn" data-en="Fakie kickturn">Fakie kickturn</h3>
+                <p i18n data-ca="Mentre rodes fent un fakie, fas un kickturn per tornar a posicionar-te normal." data-es="Mientras ruedas en fakie, haces un kickturn para volver a posicionarte normal." data-en="While riding fakie, you do a kickturn to return to a normal stance.">Mentre rodes fent un fakie, fas un kickturn per tornar a posicionar-te normal.</p>
               </div>
           </div>
           <div class="section-container">
@@ -71,8 +84,8 @@
                   <img src="../img/tricks/drop-in.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Drop In</h3>
-                <p>Et prepares a dalt d'una rampa recolzant-te únicament al tail. Després, rapidament i amb força emputxes cap a baix les rodes delanteres i caus i et deixes rodar.</p>
+                <h3 i18n data-ca="Drop In" data-es="Drop In" data-en="Drop In">Drop In</h3>
+                <p i18n data-ca="Et prepares a dalt d'una rampa recolzant-te únicament al tail. Després, ràpidament i amb força empenys cap a baix les rodes davanteres, caus i et deixes rodar." data-es="Te preparas en lo alto de una rampa apoyándote únicamente en el tail. Luego, rápidamente y con fuerza empujas hacia abajo las ruedas delanteras, caes y te dejas rodar." data-en="You set up at the top of a ramp leaning solely on the tail. Then, quickly and forcefully, you push the front wheels down, drop in, and let yourself roll.">Et prepares a dalt d'una rampa recolzant-te únicament al tail. Després, ràpidament i amb força empenys cap a baix les rodes davanteres, caus i et deixes rodar.</p>
               </div>
           </div>
           <div class="section-container">
@@ -80,22 +93,22 @@
                   <img src="../img/tricks/ollie.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Ollie</h3>
-                <p>Aquesta és la base per trucs més avançats. Saltes amb el peu de darrere fent saltar la taula, i amb el de davant la nivelles a l'aire per saltar junts.</p>
+                <h3 i18n data-ca="Ollie" data-es="Ollie" data-en="Ollie">Ollie</h3>
+                <p i18n data-ca="Aquesta és la base per trucs més avançats. Saltes amb el peu del darrere fent saltar la taula, i amb el de davant la anivelles a l'aire per saltar junts." data-es="Esta es la base para trucos más avanzados. Saltas con el pie trasero haciendo saltar la tabla, y con el de delante la nivelas en el aire para saltar juntos." data-en="This is the foundation for more advanced tricks. You pop the board with your back foot, and level it in the air with your front foot to jump together.">Aquesta és la base per trucs més avançats. Saltes amb el peu del darrere fent saltar la taula, i amb el de davant la anivelles a l'aire per saltar junts.</p>
               </div>
           </div>
 
         </div>
 
-        <h2>Flip-tricks</h2>
+        <h2 i18n data-ca="Flip-tricks" data-es="Flip-tricks" data-en="Flip-tricks">Flip-tricks</h2>
         <div class="section">
           <div class="section-container">
               <div class="img-div">
                   <img src="../img/tricks/pop-shuvit.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Pop shuvit</h3>
-                <p>Per fer un pop shuvit, hem de fer girar la taula 180º mentres fem un ollie, amb l'ajuda d'una rotació per part del peu de darrere.</p>
+                <h3 i18n data-ca="Pop shuvit" data-es="Pop shuvit" data-en="Pop shuvit">Pop shuvit</h3>
+                <p i18n data-ca="Per fer un pop shuvit, hem de fer girar la taula 180º mentre fem un ollie, amb l'ajuda d'una rotació per part del peu del darrere." data-es="Para hacer un pop shuvit, debemos hacer girar la tabla 180º mientras hacemos un ollie, con la ayuda de una rotación por parte del pie trasero." data-en="To do a pop shuvit, we must spin the board 180º while doing an ollie, with the help of a scoop from the back foot.">Per fer un pop shuvit, hem de fer girar la taula 180º mentre fem un ollie, amb l'ajuda d'una rotació per part del peu del darrere.</p>
               </div>
           </div>
           <div class="section-container">
@@ -103,8 +116,8 @@
                   <img src="../img/tricks/kickflip.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Kickflip</h3>
-                <p>Aquest és un truc mitiquísim. Per fer-ho, cal fer un ollie; però a l'hora de nivellar la taula cal lliscar el peu dominant cap a un lateral per fer rotar la taula 360º en eix horitzontal.</p>
+                <h3 i18n data-ca="Kickflip" data-es="Kickflip" data-en="Kickflip">Kickflip</h3>
+                <p i18n data-ca="Aquest és un truc mitiquíssim. Per fer-ho, cal fer un ollie; però a l'hora d'anivellar la taula cal lliscar el peu dominant cap a un lateral per fer rotar la taula 360º en eix horitzontal." data-es="Este es un truco mitiquísimo. Para hacerlo, hay que hacer un ollie; pero a la hora de nivelar la tabla hay que deslizar el pie dominante hacia un lateral para hacer rotar la tabla 360º en el eje horizontal." data-en="This is an iconic trick. To do it, you need to do an ollie; but when leveling the board, you flick your dominant foot to the side to make the board rotate 360º on its horizontal axis.">Aquest és un truc mitiquíssim. Per fer-ho, cal fer un ollie; però a l'hora d'anivellar la taula cal lliscar el peu dominant cap a un lateral per fer rotar la taula 360º en eix horitzontal.</p>
               </div>
           </div>
           <div class="section-container">
@@ -112,8 +125,8 @@
                   <img src="../img/tricks/heelflip.png" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Heelflip</h3>
-                <p>Aquest truc és similar al kickflip, però en comptes de fer rotar la taula amb la punta del peu, s'ha de fer amb el taló.</p>
+                <h3 i18n data-ca="Heelflip" data-es="Heelflip" data-en="Heelflip">Heelflip</h3>
+                <p i18n data-ca="Aquest truc és similar al kickflip, però en comptes de fer rotar la taula amb la punta del peu, s'ha de fer amb el taló." data-es="Este truco es similar al kickflip, pero en lugar de hacer rotar la tabla con la punta del pie, se debe hacer con el talón." data-en="This trick is similar to the kickflip, but instead of flicking the board with your toe, you do it with your heel.">Aquest truc és similar al kickflip, però en comptes de fer rotar la taula amb la punta del peu, s'ha de fer amb el taló.</p>
               </div>
           </div>
           <div class="section-container">
@@ -121,8 +134,8 @@
                   <img src="../img/tricks/bs-kickflip.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Backside Flip</h3>
-                <p>Per fer-ho, simplement és fer un backside 180 ollie afegint un kickflip al procés. Simple.</p>
+                <h3 i18n data-ca="Backside Flip" data-es="Backside Flip" data-en="Backside Flip">Backside Flip</h3>
+                <p i18n data-ca="Per fer-ho, simplement és fer un backside 180 ollie afegint un kickflip al procés. Simple." data-es="Para hacerlo, simplemente es hacer un backside 180 ollie añadiendo un kickflip al proceso. Simple." data-en="To do this, it's simply doing a backside 180 ollie and adding a kickflip to the process. Simple.">Per fer-ho, simplement és fer un backside 180 ollie afegint un kickflip al procés. Simple.</p>
               </div>
           </div>
           <div class="section-container">
@@ -130,8 +143,8 @@
                   <img src="../img/tricks/360flip.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>360 Flip</h3>
-                <p>AKA 360 Kickflip/3 Flip. Popularment anomenat el millor truc de skate. Fem saltar la taula amb la part del tail, i amb el peu dominant el fem rotar un kickflip + 360 graus en eix vertical.</p>
+                <h3 i18n data-ca="360 Flip" data-es="360 Flip" data-en="360 Flip">360 Flip</h3>
+                <p i18n data-ca="AKA 360 Kickflip/3 Flip. Popularment anomenat el millor truc de skate. Fem saltar la taula amb la part del tail, i amb el peu dominant el fem rotar un kickflip + 360 graus en eix vertical." data-es="AKA 360 Kickflip/3 Flip. Popularmente considerado el mejor truco de skate. Hacemos saltar la tabla con la parte del tail, y con el pie dominante la hacemos rotar un kickflip + 360 grados en el eje vertical." data-en="AKA 360 Kickflip/3 Flip. Popularly called the best skate trick. We pop the board with the tail, and with the dominant foot we make it rotate a kickflip + 360 degrees on the vertical axis.">AKA 360 Kickflip/3 Flip. Popularment anomenat el millor truc de skate. Fem saltar la taula amb la part del tail, i amb el peu dominant el fem rotar un kickflip + 360 graus en eix vertical.</p>
               </div>
           </div>
           <div class="section-container">
@@ -139,22 +152,22 @@
                   <img src="../img/tricks/hardflip.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Hardflip</h3>
-                <p>Fem saltar la taula per la part del nose, i ho convertim en un kickflip a l'aire amb elevació vertical. HARD.</p>
+                <h3 i18n data-ca="Hardflip" data-es="Hardflip" data-en="Hardflip">Hardflip</h3>
+                <p i18n data-ca="Fem saltar la taula per la part del nose, i ho convertim en un kickflip a l'aire amb elevació vertical. HARD." data-es="Hacemos saltar la tabla por la parte del nose, y lo convertimos en un kickflip en el aire con elevación vertical. HARD." data-en="We pop the board from the nose, and turn it into a kickflip in the air with vertical elevation. HARD.">Fem saltar la taula per la part del nose, i ho convertim en un kickflip a l'aire amb elevació vertical. HARD.</p>
               </div>
           </div>
 
         </div>
 
-        <h2>Slides</h2>
+        <h2 i18n data-ca="Slides" data-es="Slides" data-en="Slides">Slides</h2>
         <div class="section">
           <div class="section-container">
               <div class="img-div">
                   <img src="../img/tricks/board-slide.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Boardslide</h3>
-                <p>Aquest truc consisteix en grindejar amb la part central de la taula.</p>
+                <h3 i18n data-ca="Boardslide" data-es="Boardslide" data-en="Boardslide">Boardslide</h3>
+                <p i18n data-ca="Aquest truc consisteix en grindejar amb la part central de la taula." data-es="Este truco consiste en grindar con la parte central de la tabla." data-en="This trick consists of grinding with the center part of the board.">Aquest truc consisteix en grindejar amb la part central de la taula.</p>
               </div>
           </div>
           <div class="section-container">
@@ -162,8 +175,8 @@
                   <img src="../img/tricks/ns-slide.jpg" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Noseslide</h3>
-                <p>Aquest truc consisteix en grindejar amb la part devantera de la taula, el nose.</p>
+                <h3 i18n data-ca="Noseslide" data-es="Noseslide" data-en="Noseslide">Noseslide</h3>
+                <p i18n data-ca="Aquest truc consisteix en grindejar amb la part davantera de la taula, el nose." data-es="Este truco consiste en grindar con la parte delantera de la tabla, el nose." data-en="This trick consists of grinding with the front part of the board, the nose.">Aquest truc consisteix en grindejar amb la part davantera de la taula, el nose.</p>
               </div>
           </div>
           <div class="section-container">
@@ -171,8 +184,8 @@
                   <img src="../img/tricks/bs-slide.gif" alt="trick">
               </div>
               <div class="description-div">
-                <h3>Tailslide</h3>
-                <p>Aquest truc consisteix en grindejar amb la part posterior de la taula, la tail.</p>
+                <h3 i18n data-ca="Tailslide" data-es="Tailslide" data-en="Tailslide">Tailslide</h3>
+                <p i18n data-ca="Aquest truc consisteix en grindejar amb la part posterior de la taula, el tail." data-es="Este truco consiste en grindar con la parte posterior de la tabla, el tail." data-en="This trick consists of grinding with the back part of the board, the tail.">Aquest truc consisteix en grindejar amb la part posterior de la taula, el tail.</p>
               </div>
           </div>
           
@@ -183,11 +196,10 @@
         <marquee behavior="scroll" direction="left">
           <div class="marqueeDiv">
             <img src="./../img/sk8icon.png" alt="icon"> 
-            <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+            <p i18n data-ca="Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions" data-es="Sk8. De sk8ers, para sk8ers. ©2026 Pau & Marc productions" data-en="Sk8. By sk8ers, for sk8ers. ©2026 Pau & Marc productions">Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
           </div>
         </marquee>
       </footer>
-
         
     </body>
 </html>
