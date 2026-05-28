@@ -1,0 +1,50 @@
+/* Centrem el text de dalt */
+.about-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-intro {
+    max-width: 600px; /* Limita l'amplada del text perquè no ocupi tota la pantalla */
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contenidor per posar els perfils un al costat de l'altre */
+.team-container {
+    display: flex;
+    justify-content: center; /* Centra els dos perfils al mig de la pantalla */
+    gap: 50px; /* Espai entre el perfil del Pau i el del Marc */
+    flex-wrap: wrap; /* Fa que es posin un a sota l'altre en pantalles de mòbil */
+}
+
+/* Cada targeta de perfil (com els requadres del teu dibuix) */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Amplada de cada perfil */
+}
+
+/* La imatge de cada perfil */
+.profile-img {
+    width: 100%;
+    height: 400px; /* Alçada fixa per fer l'efecte de rectangle del dibuix */
+    object-fit: cover; /* Evita que la imatge es deformi */
+    border: 3px solid #000; /* Vora negra (opcional, perquè quedi com el dibuix) */
+    margin-bottom: 15px;
+}
+
+/* Títol (Nom) a sota la foto */
+.profile-info h2 {
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+/* Text descriptiu a sota del nom */
+.profile-info p {
+    text-align: center;
+    margin: 0;
+}
