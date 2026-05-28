@@ -54,7 +54,6 @@ selector.addEventListener('change', function () {
     localStorage.setItem('idiomaSk8', nouIdioma); // Guarda la sessió
 });
 ```
-*(Pots afegir aquí un GIF navegant per la web o una captura de la pàgina principal).*
 
 ---
 
