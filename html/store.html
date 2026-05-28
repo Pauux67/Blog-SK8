@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SK8.com</title>
+  <title i18n data-ca="SK8.com - La nostra botiga" data-es="SK8.com - Nuestra tienda" data-en="SK8.com - Our store">SK8.com - La nostra botiga</title>
   <meta name="author" content="Marc & Pau">
   <meta name="description" content="Skate">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,38 +13,47 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/store.css">
   <link rel="stylesheet" type="text/css" href="../css/colors.css">
+  
+  <script src="../js/script.js"></script>
 </head>
 
 <body class="body">
   <header class="header">
     <img src="./../img/BannerSK8.png" alt="logo" class="logo">
-    <div class="loginDiv"><a href="../html/login.html">Iniciar Sessió</a></div>
+    
+    <div class="lang-container" style="margin-left: auto; margin-right: 15px;">
+        <select id="langSelect">
+          <option value="ca">Català</option>
+          <option value="es">Castellano</option>
+          <option value="en">English</option>
+        </select>
+    </div>
+
+    <div class="loginDiv"><a href="../html/login.html" i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</a></div>
   </header>
 
   <nav class="nav">
-    <a href="../index.html">Inici</a>
-    <a href="../html/about.html">Sobre nosaltres</a>
-    <a href="../html/posts.html">Trucs de skate</a>
-    <a href="../html/store.html">La nostra botiga</a>
-    <a href="../html/contact.html">Contactan's</a>
+    <a href="../index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a>
+    <a href="../html/about.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a>
+    <a href="../html/posts.html" i18n data-ca="Trucs de skate" data-es="Trucos de skate" data-en="Skate tricks">Trucs de skate</a>
+    <a href="../html/store.html" i18n data-ca="La nostra botiga" data-es="Nuestra tienda" data-en="Our store">La nostra botiga</a>
+    <a href="../html/contact.html" i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</a>
   </nav>
 
   <main class="main">
-    <h3>Taules d'skate</h3>
+    <h3 i18n data-ca="Taules d'skate" data-es="Tablas de skate" data-en="Skate decks">Taules d'skate</h3>
     <div class="section">
       <div class="section-container">
         <div class="img-div">
           <img src="/img/pattern.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Taula toy machine "PATTERN LOGO"</h2>
-          <p>
-            8.00" x 31.63"
-            14.38" Wheelbase
-            7.00" Nose / 6.75" Tail
+          <h2 i18n data-ca='Taula Toy Machine "PATTERN LOGO"' data-es='Tabla Toy Machine "PATTERN LOGO"' data-en='Toy Machine Deck "PATTERN LOGO"'>Taula Toy Machine "PATTERN LOGO"</h2>
+          <p i18n data-ca='8.00" x 31.63" | 14.38" Distància entre eixos | 7.00" Nose / 6.75" Tail' data-es='8.00" x 31.63" | 14.38" Distancia entre ejes | 7.00" Nose / 6.75" Tail' data-en='8.00" x 31.63" | 14.38" Wheelbase | 7.00" Nose / 6.75" Tail'>
+            8.00" x 31.63" | 14.38" Distància entre eixos | 7.00" Nose / 6.75" Tail
           </p>
           <p>75,00 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
       <div class="section-container">
@@ -52,14 +61,12 @@
           <img src="/img/tm_fist004.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Taula toy machine "FISTS"</h2>
-          <p>
-            7.75" x 31.25"
-            14.00" Wheelbase
-            6.88" Nose / 6.50" Tail
+          <h2 i18n data-ca='Taula Toy Machine "FISTS"' data-es='Tabla Toy Machine "FISTS"' data-en='Toy Machine Deck "FISTS"'>Taula Toy Machine "FISTS"</h2>
+          <p i18n data-ca='7.75" x 31.25" | 14.00" Distància entre eixos | 6.88" Nose / 6.50" Tail' data-es='7.75" x 31.25" | 14.00" Distancia entre ejes | 6.88" Nose / 6.50" Tail' data-en='7.75" x 31.25" | 14.00" Wheelbase | 6.88" Nose / 6.50" Tail'>
+            7.75" x 31.25" | 14.00" Distància entre eixos | 6.88" Nose / 6.50" Tail
           </p>
           <p>85,00 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
 
@@ -68,16 +75,12 @@
           <img src="/img/139188-0-SantaCruz-ScreamingHand8375.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Taula Santa Cruz "Screaming Hand"</h2>
-          <p>
-            Ancho: 8.375"
-            largo: 32"
-            distancia entre ejes: 14.5"
-            nose: 6.9"
-            tail: 6.5"
+          <h2 i18n data-ca='Taula Santa Cruz "Screaming Hand"' data-es='Tabla Santa Cruz "Screaming Hand"' data-en='Santa Cruz Deck "Screaming Hand"'>Taula Santa Cruz "Screaming Hand"</h2>
+          <p i18n data-ca='Amplada: 8.375" | Llargada: 32" | Distància entre eixos: 14.5" | Nose: 6.9" | Tail: 6.5"' data-es='Ancho: 8.375" | Largo: 32" | Distancia entre ejes: 14.5" | Nose: 6.9" | Tail: 6.5"' data-en='Width: 8.375" | Length: 32" | Wheelbase: 14.5" | Nose: 6.9" | Tail: 6.5"'>
+            Amplada: 8.375" | Llargada: 32" | Distància entre eixos: 14.5" | Nose: 6.9" | Tail: 6.5"
           </p>
           <p>71,99 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
 
       </div>
@@ -86,40 +89,29 @@
           <img src="/img/tm_cr_skatebyfaith.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Taula toy machine "CORDANO RUSSELL"</h2>
-          <p>
-            8.50" x 32.00"
-            14.25" Wheelbase
-            7.00" Nose / 6.88" Tail
+          <h2 i18n data-ca='Taula Toy Machine "CORDANO RUSSELL"' data-es='Tabla Toy Machine "CORDANO RUSSELL"' data-en='Toy Machine Deck "CORDANO RUSSELL"'>Taula Toy Machine "CORDANO RUSSELL"</h2>
+          <p i18n data-ca='8.50" x 32.00" | 14.25" Distància entre eixos | 7.00" Nose / 6.88" Tail' data-es='8.50" x 32.00" | 14.25" Distancia entre ejes | 7.00" Nose / 6.88" Tail' data-en='8.50" x 32.00" | 14.25" Wheelbase | 7.00" Nose / 6.88" Tail'>
+            8.50" x 32.00" | 14.25" Distància entre eixos | 7.00" Nose / 6.88" Tail
           </p>
           <p>72,67 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
-
       </div>
-
-
-
-
     </div>
 
-
-    </div>
-
-
-    <h3>Rodes d'skate</h3>
+    <h3 i18n data-ca="Rodes d'skate" data-es="Ruedas de skate" data-en="Skate wheels">Rodes d'skate</h3>
     <div class="section">
       <div class="section-container">
         <div class="img-div">
           <img src="/img/rtm002-ruedas-skate-toy-machine-sect-skater-99a-52mm_1.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodes toy machine "Sect Skater"</h2>
+          <h2 i18n data-ca='Rodes Toy Machine "Sect Skater"' data-es='Ruedas Toy Machine "Sect Skater"' data-en='Toy Machine Wheels "Sect Skater"'>Rodes Toy Machine "Sect Skater"</h2>
           <p>
             99A 52mm Pack 4
           </p>
           <p>33,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
       <div class="section-container">
@@ -127,12 +119,12 @@
           <img src="/img/RSP030-RUEDAS-SKATE-SPITFIRE-FORMULA-4-CONICAL-FULL.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodes Spitfire "F4 Conical Full Blue"</h2>
+          <h2 i18n data-ca='Rodes Spitfire "F4 Conical Full Blue"' data-es='Ruedas Spitfire "F4 Conical Full Blue"' data-en='Spitfire Wheels "F4 Conical Full Blue"'>Rodes Spitfire "F4 Conical Full Blue"</h2>
           <p>
             99DU 56mm Pack 4
           </p>
           <p>71,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
 
@@ -141,47 +133,43 @@
           <img src="/img/softies.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodes Spitfire "Classic Lil Softies"</h2>
+          <h2 i18n data-ca='Rodes Spitfire "Classic Lil Softies"' data-es='Ruedas Spitfire "Classic Lil Softies"' data-en='Spitfire Wheels "Classic Lil Softies"'>Rodes Spitfire "Classic Lil Softies"</h2>
           <p>
             95D 52mm Pack 4
           </p>
           <p>34,99 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
 
       </div>
-<div class="section-container">
+      <div class="section-container">
         <div class="img-div">
           <img src="/img/boness.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodes Bones "Smokin Snake V5 Sidecut X-Formula"</h2>
+          <h2 i18n data-ca='Rodes Bones "Smokin Snake V5 Sidecut X-Formula"' data-es='Ruedas Bones "Smokin Snake V5 Sidecut X-Formula"' data-en='Bones Wheels "Smokin Snake V5 Sidecut X-Formula"'>Rodes Bones "Smokin Snake V5 Sidecut X-Formula"</h2>
           <p>
             99A 55mm Pack 4
           </p>
           <p>64,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
-
       </div>
-
     </div>
     
-
-    
-    <h3>Trucks d'skate</h3>
+    <h3 i18n data-ca="Trucks d'skate" data-es="Ejes de skate" data-en="Skate trucks">Trucks d'skate</h3>
     <div class="section">
       <div class="section-container">
         <div class="img-div">
           <img src="/img/EJIND036-EJES-SKATE-INDEPENDENT-STAGE-11-BAR-FLAT-BLACK-STANDARD_4f99aab7-747c-47ef-96bd-e5c1cfd65923.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Eix Independent "Stage 11 Bar Flat Black"</h2>
+          <h2 i18n data-ca='Eix Independent "Stage 11 Bar Flat Black"' data-es='Eje Independent "Stage 11 Bar Flat Black"' data-en='Independent Truck "Stage 11 Bar Flat Black"'>Eix Independent "Stage 11 Bar Flat Black"</h2>
           <p>
             Standard 159 Pack 2
           </p>
           <p>33,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
       <div class="section-container">
@@ -189,12 +177,12 @@
           <img src="/img/slantt.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Eix Slant "Standard Raw Finish"</h2>
+          <h2 i18n data-ca='Eix Slant "Standard Raw Finish"' data-es='Eje Slant "Standard Raw Finish"' data-en='Slant Truck "Standard Raw Finish"'>Eix Slant "Standard Raw Finish"</h2>
           <p>
             5.375 Pack 2
           </p>
           <p>34,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
 
@@ -203,51 +191,43 @@
           <img src="/img/kruxxx.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Eix Krux "K5 Polished Silver"</h2>
+          <h2 i18n data-ca='Eix Krux "K5 Polished Silver"' data-es='Eje Krux "K5 Polished Silver"' data-en='Krux Truck "K5 Polished Silver"'>Eix Krux "K5 Polished Silver"</h2>
           <p>
             Standard 8.25 Pack 2
           </p>
-          <p>51,90€ €</p>
-          <button>Comprar</button>
+          <p>51,90 €</p>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
 
       </div>
-<div class="section-container">
+      <div class="section-container">
         <div class="img-div">
           <img src="/img/EJVEN085A-EJES-SKATE-VENTURE-V-FORGED-POLISHED-HI_67245870-7c90-47f9-8525-93167d9cd3e5.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Eix Venture "V Forged Polished"</h2>
+          <h2 i18n data-ca='Eix Venture "V Forged Polished"' data-es='Eje Venture "V Forged Polished"' data-en='Venture Truck "V Forged Polished"'>Eix Venture "V Forged Polished"</h2>
           <p>
             5.8 Pack 2
           </p>
           <p>55,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
-
       </div>
-
     </div>
-
-    </div>
-
-
-
-
     
-    <h3>Rodaments d'skate</h3>
+    <h3 i18n data-ca="Rodaments d'skate" data-es="Rodamientos de skate" data-en="Skate bearings">Rodaments d'skate</h3>
     <div class="section">
       <div class="section-container">
         <div class="img-div">
           <img src="/img/robo004-rodamientos-skate-bones-super-reds.jpg">
         </div>
         <div class="description-div">
-          <h2>Rodaments Bones "Super Reds"</h2>
-          <p>
-            8 Rodamientos de skate.
+          <h2 i18n data-ca='Rodaments Bones "Super Reds"' data-es='Rodamientos Bones "Super Reds"' data-en='Bones Bearings "Super Reds"'>Rodaments Bones "Super Reds"</h2>
+          <p i18n data-ca="8 Rodaments d'skate." data-es="8 Rodamientos de skate." data-en="8 Skate bearings.">
+            8 Rodaments d'skate.
           </p>
           <p>39,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
       <div class="section-container">
@@ -255,12 +235,12 @@
           <img src="/img/ceramic.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodaments Bones "Ceramic red"</h2>
-          <p>
-            8 Rodamientos de skate.
+          <h2 i18n data-ca='Rodaments Bones "Ceramic red"' data-es='Rodamientos Bones "Ceramic red"' data-en='Bones Bearings "Ceramic red"'>Rodaments Bones "Ceramic red"</h2>
+          <p i18n data-ca="8 Rodaments d'skate." data-es="8 Rodamientos de skate." data-en="8 Skate bearings.">
+            8 Rodaments d'skate.
           </p>
           <p>109,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
       </div>
 
@@ -269,32 +249,28 @@
           <img src="/img/dragoon.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodaments Bones "Reds 608"</h2>
-          <p>
-            8 Rodamientos de skate
+          <h2 i18n data-ca='Rodaments Bones "Reds 608"' data-es='Rodamientos Bones "Reds 608"' data-en='Bones Bearings "Reds 608"'>Rodaments Bones "Reds 608"</h2>
+          <p i18n data-ca="8 Rodaments d'skate." data-es="8 Rodamientos de skate." data-en="8 Skate bearings.">
+            8 Rodaments d'skate.
           </p>
-          <p>24,90€ €</p>
-          <button>Comprar</button>
+          <p>24,90 €</p>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
 
       </div>
-<div class="section-container">
+      <div class="section-container">
         <div class="img-div">
           <img src="/img/robo005-rodamientos-skate-bones-red-308-big-balls.jpg" alt="taula">
         </div>
         <div class="description-div">
-          <h2>Rodaments Bones "Reds 608 Big Balls"</h2>
-          <p>
-            8 Rodamientos de skate "Nomes per a qui te Big balls!"
+          <h2 i18n data-ca='Rodaments Bones "Reds 608 Big Balls"' data-es='Rodamientos Bones "Reds 608 Big Balls"' data-en='Bones Bearings "Reds 608 Big Balls"'>Rodaments Bones "Reds 608 Big Balls"</h2>
+          <p i18n data-ca="8 Rodaments d'skate. Només per a qui té Big balls!" data-es="8 Rodamientos de skate. ¡Solo para quien tiene Big balls!" data-en="8 Skate bearings. Only for those with Big balls!">
+            8 Rodaments d'skate. Només per a qui té Big balls!
           </p>
           <p>31,90 €</p>
-          <button>Comprar</button>
+          <button i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</button>
         </div>
-
       </div>
-
-    </div>
-
     </div>
   </main>
 
@@ -302,11 +278,10 @@
     <marquee behavior="scroll" direction="left">
       <div class="marqueeDiv">
         <img src="../img/sk8icon.png" alt="icon">
-        <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+        <p i18n data-ca="Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions" data-es="Sk8. De sk8ers, para sk8ers. ©2026 Pau & Marc productions" data-en="Sk8. By sk8ers, for sk8ers. ©2026 Pau & Marc productions">Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
       </div>
     </marquee>
   </footer>
-
 
 </body>
 

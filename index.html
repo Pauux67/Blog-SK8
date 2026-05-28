@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +12,32 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <link rel="stylesheet" type="text/css" href="./css/colors.css">
+        
+        <script src="./js/script.js"></script>
     </head>
     <body class="body">
       <header class="header">
         <img src="./img/BannerSK8.png" alt="logo" class="logo">
-        <div class="loginDiv"><a href="./html/login.html">Iniciar Sessió</a></div>
+        
+        <div class="lang-container" style="margin-left: auto; margin-right: 15px;">
+            <select id="langSelect">
+              <option value="ca">Català</option>
+              <option value="es">Castellano</option>
+              <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="loginDiv">
+            <a href="./html/login.html" i18n data-ca="Iniciar Sessió" data-es="Iniciar Sesión" data-en="Login">Iniciar Sessió</a>
+        </div>
       </header> 
 
       <nav class="nav">
-        <a href="./index.html">Inici</a>
-        <a href="./html/about.html">Sobre nosaltres</a>
-        <a href="./html/posts.html">Trucs de skate</a>
-        <a href="./html/store.html">La nostra botiga</a>
-        <a href="./html/contact.html">Contactan's</a>
+        <a href="./index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a>
+        <a href="./html/about.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a>
+        <a href="./html/posts.html" i18n data-ca="Trucs de skate" data-es="Trucos de skate" data-en="Skate tricks">Trucs de skate</a>
+        <a href="./html/store.html" i18n data-ca="La nostra botiga" data-es="Nuestra tienda" data-en="Our store">La nostra botiga</a>
+        <a href="./html/contact.html" i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</a>
       </nav>
 
       <main class="main">
@@ -34,10 +47,10 @@
             <div class="hero-content">
               <hr>
               <br>
-                <h1>Pura passió sobre rodes</h1>
+                <h1 i18n data-ca="Pura passió sobre rodes" data-es="Pura pasión sobre ruedas" data-en="Pure passion on wheels">Pura passió sobre rodes</h1>
                 <img src="/img/giphy.gif" alt="Skate">
-                <p>Descobreix els millors trucs, consells i material per patinar al màxim.</p>
-                <a href="./html/store.html" class="btn btn-secondary">Anar a la Botiga</a>
+                <p i18n data-ca="Descobreix els millors trucs, consells i material per patinar al màxim." data-es="Descubre los mejores trucos, consejos y material para patinar al máximo." data-en="Discover the best tricks, tips, and gear to skate to the fullest.">Descobreix els millors trucs, consells i material per patinar al màxim.</p>
+                <a href="./html/store.html" class="btn btn-secondary" i18n data-ca="Anar a la Botiga" data-es="Ir a la Tienda" data-en="Go to the Store">Anar a la Botiga</a>
             </div>
           </section>
 
@@ -47,11 +60,11 @@
               
               <div class="tricks-grid">
                   <article class="trick-card">
-                    <h2>Últims Trucs</h2>
+                    <h2 i18n data-ca="Últims Trucs" data-es="Últimos Trucos" data-en="Latest Tricks">Últims Trucs</h2>
                       <img src="/img/images.jpg" alt="Com fer un Ollie">
-                      <h3>Domina l'Ollie</h3>
-                      <p>La base de tot. T'ensenyem a picar alt i aterrar segur.</p>
-                      <a href="./html/posts.html">Llegir més...</a>
+                      <h3 i18n data-ca="Domina l'Ollie" data-es="Domina el Ollie" data-en="Master the Ollie">Domina l'Ollie</h3>
+                      <p i18n data-ca="La base de tot. T'ensenyem a picar alt i aterrar segur." data-es="La base de todo. Te enseñamos a saltar alto y aterrizar seguro." data-en="The foundation of everything. We teach you to pop high and land safely.">La base de tot. T'ensenyem a picar alt i aterrar segur.</p>
+                      <a href="./html/posts.html" i18n data-ca="Llegir més..." data-es="Leer más..." data-en="Read more...">Llegir més...</a>
                   </article>
                   </div>
           </section>
@@ -62,11 +75,11 @@
               
               <div class="products-flex">
                   <div class="product-item">
-                    <h2>Material Recomanat</h2>
+                    <h2 i18n data-ca="Material Recomanat" data-es="Material Recomendado" data-en="Recommended Gear">Material Recomanat</h2>
                       <img src="/img/skateboard-toy-machine-pee-sect-7625.jpg" alt="Taula Sk8">
-                      <h4>Taula Toy machine   </h4>
+                      <h4 i18n data-ca="Taula Toy machine" data-es="Tabla Toy machine" data-en="Toy machine deck">Taula Toy machine</h4>
                       <p>75,00 €</p>
-                      <a href="./html/store.html">Comprar</a>
+                      <a href="./html/store.html" i18n data-ca="Comprar" data-es="Comprar" data-en="Buy">Comprar</a>
                       <hr>
                   </div>
                   </div>
@@ -74,18 +87,16 @@
 
         </div>
         <div class="aside"></div>
-     </main>
+      </main>
     
-
       <footer class="footer">
         <marquee behavior="scroll" direction="left">
           <div class="marqueeDiv">
             <img src="./img/sk8icon.png" alt="icon"> 
-            <p>Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
+            <p i18n data-ca="Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions" data-es="Sk8. De sk8ers, para sk8ers. ©2026 Pau & Marc productions" data-en="Sk8. By sk8ers, for sk8ers. ©2026 Pau & Marc productions">Sk8. De sk8ers, per sk8ers. ©2026 Pau & Marc productions</p>
           </div>
         </marquee>
       </footer>
-
         
     </body>
 </html>
